@@ -1,0 +1,9 @@
+/answer_clustering/data/*
+/answer_clustering/data-processed/*
+/.vscode
+*.xlsx
+.ipynb_checkpoints/
+/stanford-tregex-2020-11-17
+__pycache__/
+answer_clustering/output.tsv
+!.gitkeep

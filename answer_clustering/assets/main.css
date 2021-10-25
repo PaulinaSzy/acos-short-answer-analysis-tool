@@ -1,0 +1,91 @@
+body {
+    width: 100%;
+    margin: 0;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 500px auto;
+    grid-template-rows: auto auto;
+    gap: 2em;
+    grid-template-areas: 
+        "sidebar toolbar"
+        "sidebar analysis";
+    margin: 0;
+    width: 100%;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgb(65, 77, 121);
+    color: white;
+}
+
+.sidebar a {
+    color: rgb(255, 187, 187);
+    /* font-weight: bold; */
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: rgb(201, 125, 125);
+}
+
+.sidebar a.active {
+    color: white;
+
+    text-shadow: 
+    1px 1px 1px #754444,
+    1px 2px 1px #754444,
+    1px 3px 1px #754444,
+    1px 4px 1px #754444,
+    2px 1px 1px #754444,
+    2px 2px 1px #754444,
+    2px 3px 1px #754444,
+    2px 4px 1px #754444,
+    3px 1px 1px #754444,
+    3px 2px 1px #754444,
+    3px 3px 1px #754444,
+    3px 4px 1px #754444,
+    4px 1px 1px #754444,
+    4px 2px 1px #754444,
+    4px 3px 1px #754444,
+    4px 4px 1px #754444;
+}
+
+.sidebar__content {
+    margin-top: 4em;
+    margin-left: 1em;
+    margin-right: 1em;
+    position: sticky;
+    top: 2em;
+}
+
+.sidebar__content h1 {
+    margin-bottom: 2em;
+}
+
+.sidebar__content h2 {
+    margin-top: 2em;
+}
+
+.sidebar__content h3 {
+    margin-left: 2em;
+}
+
+.toolbar {
+    grid-area: toolbar;
+    margin-right: 2em;
+    padding-bottom: 3em;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.411);
+}
+
+.toolbar .description {
+
+    border-bottom: 2px solid rgba(0, 0, 0, 0.411);
+}
+
+.right_content {
+    grid-area: analysis;
+    margin-right: 2em;
+}

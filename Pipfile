@@ -1,0 +1,37 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+jupyterlab = "*"
+ipykernel = "*"
+numpy = "*"
+pandas = "*"
+nltk = "*"
+dash = "*"
+sklearn = "*"
+ipywidgets = "*"
+jupyter-dash = "*"
+openpyxl = "*"
+gensim = "*"
+tensorflow-hub = "*"
+tensorflow = "*"
+spacy = "*"
+networkx = "*"
+textcomplexity = "==0.9.1"
+spacy-conll = "*"
+spacy-stanza = "*"
+stanza = "*"
+psutil = "*"
+kaleido = "*"
+benepar = "*"
+
+[dev-packages]
+flake8 = "*"
+
+[requires]
+python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true
