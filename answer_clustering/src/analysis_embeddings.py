@@ -11,9 +11,6 @@ import timeit
 from sklearn.cluster import DBSCAN
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import wordnet
-
-nltk.download("wordnet")
-nltk.download("punkt")
 from nltk.corpus import stopwords
 import pickle as pkl
 import difflib
